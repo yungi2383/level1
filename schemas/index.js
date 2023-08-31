@@ -6,7 +6,11 @@ const connect = () => {
     .connect(
       "mongodb+srv://yungiDB:dbsrlgd@cluster0.bpcqzfd.mongodb.net/?retryWrites=true&w=majority",
       {
-        dbName: "node_level1", // spa_mall 데이터베이스명을 사용합니다.
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        tls: true,
+
+        dbName: "node_level1",
       }
     )
     .catch((err) => console.log(err))
