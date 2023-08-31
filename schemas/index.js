@@ -25,8 +25,3 @@ mongoose.connection.on("error", (err) => {
 });
 
 export default connect;
-
-조윤주(N반);
-Available;
-
-66;
